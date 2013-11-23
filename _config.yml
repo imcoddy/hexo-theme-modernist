@@ -1,19 +1,19 @@
 menu:
   Home: /
   Archives: /archives
+  About: /about
 
 excerpt_link: Read More
 archive_yearly: false
 
 widgets:
-  - category
-  - tag
-  - tagcloud
   - recent_posts
-  - blogroll
+  - category
+  #- tag
+  - tagcloud
+  #- blogroll
 
 blogrolls:
-  - Heroic Yang's Blog: http://heroicyang.com/
 
 fancybox: true
 
