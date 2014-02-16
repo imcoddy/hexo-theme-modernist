@@ -1,6 +1,22 @@
 <% if (config.disqus_shortname && page.comments){ %>
 <section id="comment">
-  <h1 class="title"><%= __('comment') %></h1>
+  <h1 class="title"><%= __('comment') %>
+  <script src="http://coinwidget.com/widget/coin.js"></script>
+  <script>
+  CoinWidgetCom.go({
+    wallet_address: "1MzziGBa7tNNzMwVJMPEjAfM1wRcvSGZu5"
+    , currency: "bitcoin"
+    , counter: "count"
+    , alignment: "bl"
+    , qrcode: true
+    , auto_show: false
+    , lbl_button: "赏个小钱"
+    , lbl_address: "赏个小钱给这篇文章"
+    , lbl_count: "次捐赠"
+    , lbl_amount: "BTC"
+  });
+  </script>
+  </h1>
   <div id="disqus_thread">
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
